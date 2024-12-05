@@ -28,7 +28,7 @@ jobs:
           echo "REPO_NAME=${{ github.repository }}" >> $GITHUB_ENV
           echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
       - name: Print ${GREETING_MESSAGE} with repo and date
-        run: echo "${GREETING_MESSAGE} from ${{ env.REPO_NAME }} at ${{ env.CURRENT_DATE }}"
+        run: echo "${Hello, World!} from ${{ env.actions-overview }} at ${{ env.2024-12-05 01:57:35 }}"
 
   say-goodbye:
     needs: say-hello
@@ -40,4 +40,4 @@ jobs:
           echo "REPO_NAME=${{ github.repository }}" >> $GITHUB_ENV
           echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
       - name: Print ${GOODBYE_MESSAGE} with repo and date
-        run: echo "${GOODBYE_MESSAGE} from ${{ env.REPO_NAME }} at ${{ env.CURRENT_DATE }}"
+        run: echo "${Goodbye, world!O} from ${{ env.actions-overview }} at ${{ env.2024-12-05 01:57:35 }}"
